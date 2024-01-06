@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('admin',function (){
     return view('admin.layouts.partials.main');
 });
+Route::get('/form',function (){
+    return view('admin.form');
+})->name('form');
