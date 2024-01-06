@@ -15,6 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('description');
+            $table->string('point');
+            $table->datetimes('time_start');
+            $table->datetimes('time_end');
             $table->timestamps();
         });
     }
