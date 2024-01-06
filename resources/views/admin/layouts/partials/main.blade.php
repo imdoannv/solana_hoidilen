@@ -100,12 +100,12 @@
                         <div class="flex flex-col md:flex-row md:items-center">
                             <div class="flex">
                                 <div>
-                                    <div class="text-primary dark:text-slate-300 text-lg xl:text-xl font-medium">
+                                    <div class="text-primary text-lg xl:text-xl font-medium">
                                         $15,000
                                     </div>
                                     <div class="mt-0.5 text-slate-500">This Month</div>
                                 </div>
-                                <div class="w-px h-12 border border-r border-dashed border-slate-200 dark:border-darkmode-300 mx-4 xl:mx-5"></div>
+                                <div class="w-px h-12 border border-r border-dashed border-slate-200 mx-4 xl:mx-5"></div>
                                 <div>
                                     <div class="text-slate-500 text-lg xl:text-xl font-medium">$10,000</div>
                                     <div class="mt-0.5 text-slate-500">Last Month</div>
@@ -289,7 +289,7 @@
                             </div>
                         </div>
                         <a href="#"
-                           class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-slate-400 dark:border-darkmode-300 text-slate-500">View
+                           class="intro-y w-full block text-center rounded-md py-4 border border-dotted border-slate-400 text-slate-500">View
                             More</a>
                     </div>
                 </div>
@@ -318,7 +318,7 @@
                         <div class="box p-5 zoom-in">
                             <div class="flex">
                                 <div class="text-lg font-medium truncate mr-3">Social Media</div>
-                                <div class="py-1 px-2 flex items-center rounded-full text-xs bg-slate-100 dark:bg-darkmode-400 text-slate-500 cursor-pointer ml-auto truncate">
+                                <div class="py-1 px-2 flex items-center rounded-full text-xs bg-slate-100 text-slate-500 cursor-pointer ml-auto truncate">
                                     320 Followers
                                 </div>
                             </div>
@@ -351,7 +351,7 @@
                         <div class="box p-5 zoom-in">
                             <div class="flex">
                                 <div class="text-lg font-medium truncate mr-3">Posted Ads</div>
-                                <div class="py-1 px-2 flex items-center rounded-full text-xs bg-slate-100 dark:bg-darkmode-400 text-slate-500 cursor-pointer ml-auto truncate">
+                                <div class="py-1 px-2 flex items-center rounded-full text-xs bg-slate-100 text-slate-500 cursor-pointer ml-auto truncate">
                                     180 Campaign
                                 </div>
                             </div>
@@ -371,11 +371,11 @@
                             Weekly Top Products
                         </h2>
                         <div class="flex items-center sm:ml-auto mt-3 sm:mt-0">
-                            <button class="btn box flex items-center text-slate-600 dark:text-slate-300"><i
+                            <button class="btn box flex items-center text-slate-600"><i
                                         data-lucide="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to
                                 Excel
                             </button>
-                            <button class="ml-3 btn box flex items-center text-slate-600 dark:text-slate-300"><i
+                            <button class="ml-3 btn box flex items-center text-slate-600"><i
                                         data-lucide="file-text" class="hidden sm:block w-4 h-4 mr-2"></i> Export to PDF
                             </button>
                         </div>
@@ -678,7 +678,7 @@
                                 </div>
                             </div>
                             <a href="#"
-                               class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-slate-400 dark:border-darkmode-300 text-slate-500">View
+                               class="intro-x w-full block text-center rounded-md py-3 border border-dotted border-slate-400 text-slate-500">View
                                 More</a>
                         </div>
                     </div>
@@ -788,10 +788,10 @@
                                 Important Notes
                             </h2>
                             <button data-carousel="important-notes" data-target="prev"
-                                    class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2">
+                                    class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 mr-2">
                                 <i data-lucide="chevron-left" class="w-4 h-4"></i></button>
                             <button data-carousel="important-notes" data-target="next"
-                                    class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 dark:text-slate-300 mr-2">
+                                    class="tiny-slider-navigator btn px-2 border-slate-300 text-slate-600 mr-2">
                                 <i data-lucide="chevron-right" class="w-4 h-4"></i></button>
                         </div>
                         <div class="mt-5 intro-x">
@@ -884,7 +884,7 @@
                                         <div class="py-0.5 rounded relative">3</div>
                                         <div class="py-0.5 rounded relative">4</div>
                                         <div class="py-0.5 rounded relative">5</div>
-                                        <div class="py-0.5 bg-success/20 dark:bg-success/30 rounded relative">6</div>
+                                        <div class="py-0.5 bg-success/20 rounded relative">6</div>
                                         <div class="py-0.5 rounded relative">7</div>
                                         <div class="py-0.5 bg-primary text-white rounded relative">8</div>
                                         <div class="py-0.5 rounded relative">9</div>
@@ -901,11 +901,11 @@
                                         <div class="py-0.5 rounded relative">20</div>
                                         <div class="py-0.5 rounded relative">21</div>
                                         <div class="py-0.5 rounded relative">22</div>
-                                        <div class="py-0.5 bg-pending/20 dark:bg-pending/30 rounded relative">23</div>
+                                        <div class="py-0.5 bg-pending/20 rounded relative">23</div>
                                         <div class="py-0.5 rounded relative">24</div>
                                         <div class="py-0.5 rounded relative">25</div>
                                         <div class="py-0.5 rounded relative">26</div>
-                                        <div class="py-0.5 bg-primary/10 dark:bg-primary/50 rounded relative">27</div>
+                                        <div class="py-0.5 bg-primary/10 rounded relative">27</div>
                                         <div class="py-0.5 rounded relative">28</div>
                                         <div class="py-0.5 rounded relative">29</div>
                                         <div class="py-0.5 rounded relative">30</div>

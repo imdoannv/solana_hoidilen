@@ -52,15 +52,15 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="intro-x relative mr-3 sm:mr-6">
                 <div class="search hidden sm:block">
                     <input type="text" class="search__input form-control border-transparent" placeholder="Search...">
-                    <i data-lucide="search" class="search__icon dark:text-slate-500"></i>
+                    <i data-lucide="search" class="search__icon"></i>
                 </div>
-                <a class="notification sm:hidden" href="#"> <i data-lucide="search" class="notification__icon dark:text-slate-500"></i> </a>
+                <a class="notification sm:hidden" href="#"> <i data-lucide="search" class="notification__icon"></i> </a>
                 <div class="search-result">
                     <div class="search-result__content">
                         <div class="search-result__content__title">Pages</div>
                         <div class="mb-5">
                             <a href="#" class="flex items-center">
-                                <div class="w-8 h-8 bg-success/20 dark:bg-success/10 text-success flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="inbox"></i> </div>
+                                <div class="w-8 h-8 bg-success/20 text-success flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="inbox"></i> </div>
                                 <div class="ml-3">Mail Settings</div>
                             </a>
                             <a href="#" class="flex items-center mt-2">
@@ -68,7 +68,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <div class="ml-3">Users & Permissions</div>
                             </a>
                             <a href="#" class="flex items-center mt-2">
-                                <div class="w-8 h-8 bg-primary/10 dark:bg-primary/20 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="credit-card"></i> </div>
+                                <div class="w-8 h-8 bg-primary/10 text-primary/80 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-lucide="credit-card"></i> </div>
                                 <div class="ml-3">Transactions Report</div>
                             </a>
                         </div>
@@ -138,14 +138,14 @@ License: You must have a valid license purchased only from themeforest(the above
             <!-- END: Search -->
             <!-- BEGIN: Notifications -->
             <div class="intro-x dropdown mr-auto sm:mr-6">
-                <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button" aria-expanded="false" data-tw-toggle="dropdown"> <i data-lucide="bell" class="notification__icon dark:text-slate-500"></i> </div>
+                <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button" aria-expanded="false" data-tw-toggle="dropdown"> <i data-lucide="bell" class="notification__icon"></i> </div>
                 <div class="notification-content pt-2 dropdown-menu">
                     <div class="notification-content__box dropdown-content">
                         <div class="notification-content__title">Notifications</div>
                         <div class="cursor-pointer relative flex items-center ">
                             <div class="w-12 h-12 flex-none image-fit mr-1">
                                 <img alt="Midone - HTML Admin Template" class="rounded-full" src="{{asset('be/dist/images/profile-7.jpg')}}">
-                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600"></div>
+                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
                             </div>
                             <div class="ml-2 overflow-hidden">
                                 <div class="flex items-center">
@@ -158,7 +158,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="cursor-pointer relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit mr-1">
                                 <img alt="Midone - HTML Admin Template" class="rounded-full" src="{{asset('be/dist/images/profile-2.jpg')}}">
-                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600"></div>
+                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
                             </div>
                             <div class="ml-2 overflow-hidden">
                                 <div class="flex items-center">
@@ -171,7 +171,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="cursor-pointer relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit mr-1">
                                 <img alt="Midone - HTML Admin Template" class="rounded-full" src="{{asset('be/dist/images/profile-5.jpg')}}">
-                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600"></div>
+                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
                             </div>
                             <div class="ml-2 overflow-hidden">
                                 <div class="flex items-center">
@@ -184,7 +184,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="cursor-pointer relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit mr-1">
                                 <img alt="Midone - HTML Admin Template" class="rounded-full" src="{{asset('be/dist/images/profile-9.jpg')}}">
-                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600"></div>
+                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
                             </div>
                             <div class="ml-2 overflow-hidden">
                                 <div class="flex items-center">
@@ -197,7 +197,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="cursor-pointer relative flex items-center mt-5">
                             <div class="w-12 h-12 flex-none image-fit mr-1">
                                 <img alt="Midone - HTML Admin Template" class="rounded-full" src="{{asset('be/dist/images/profile-1.jpg')}}">
-                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white dark:border-darkmode-600"></div>
+                                <div class="w-3 h-3 bg-success absolute right-0 bottom-0 rounded-full border-2 border-white"></div>
                             </div>
                             <div class="ml-2 overflow-hidden">
                                 <div class="flex items-center">
@@ -220,7 +220,7 @@ License: You must have a valid license purchased only from themeforest(the above
                     <ul class="dropdown-content bg-primary text-white">
                         <li class="p-2">
                             <div class="font-medium">Kevin Spacey</div>
-                            <div class="text-xs text-white/70 mt-0.5 dark:text-slate-500">Software Engineer</div>
+                            <div class="text-xs text-white/70 mt-0.5">Software Engineer</div>
                         </li>
                         <li>
                             <hr class="dropdown-divider border-white/[0.08]">
@@ -255,10 +255,7 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- END: Content -->
 </div>
 <!-- BEGIN: Dark Mode Switcher-->
-<div data-url="side-menu-dark-dashboard-overview-1.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 right-0 box border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 mr-10">
-    <div class="mr-4 text-slate-600 dark:text-slate-200">Dark Mode</div>
-    <div class="dark-mode-switcher__toggle border"></div>
-</div>
+
 <!-- END: Dark Mode Switcher-->
 
 <!-- BEGIN: JS Assets-->
