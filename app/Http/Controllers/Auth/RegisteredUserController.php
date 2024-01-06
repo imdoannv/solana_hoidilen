@@ -77,7 +77,7 @@ class RegisteredUserController extends Controller
                     ],
                     'description' => 'NFT thể hiện điểm rèn luyện sinh viên FPOLY',
                     'imageUrl' => 'https://picsum.photos/200/300',
-                    'name' => $request->name,
+                    'name' => $email,
                 ],
                 'destinationUserReferenceId' => $referenceId,
         ]);

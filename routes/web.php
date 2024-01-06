@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\AssetController;
 
 
 /*
@@ -44,3 +45,4 @@ Route::get('/form',function (){
 })->name('form');
 
 Route::resource('events', EventController::class);
+Route::resource('assets', AssetController::class);
