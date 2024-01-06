@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EventController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +42,5 @@ Route::get('admin',function (){
 Route::get('/form',function (){
     return view('admin.form');
 })->name('form');
+
+Route::resource('events', EventController::class);
