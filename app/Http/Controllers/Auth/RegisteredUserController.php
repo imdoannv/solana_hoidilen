@@ -63,6 +63,25 @@ class RegisteredUserController extends Controller
             'email' => $email,
         ]);
 
+        $response = Http::withHeaders([
+            'accept' => 'application/json',
+            'content-type' => 'application/json',
+            'x-api-key' => env('API_KEY'),
+        ])->post('https://api.gameshift.dev/assets', [
+                'details' => [
+                    'attributes' => [
+                        [
+                            'traitType' => 'Point',
+                            'value' => '0',
+                        ],
+                    ],
+                    'description' => 'NFT thể hiện điểm rèn luyện sinh viên FPOLY',
+                    'imageUrl' => 'https://picsum.photos/200/300',
+                    'name' => $request->name,
+                ],
+                'destinationUserReferenceId' => $referenceId,
+        ]);
+
         if ($response->successful()) {
             toastr()->success('Create Account Success.');
             Auth::login($user);

@@ -12,6 +12,7 @@ class Event extends Model
     protected $fillable = [
 //        'eventId',
         'name',
-        'description'
+        'description',
+        'point_max'
     ];
 }
