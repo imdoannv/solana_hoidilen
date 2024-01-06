@@ -15,10 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('referenceId'); //userId
             $table->string('eventId');
-            $table->integer('return_point');
+            $table->integer('point');
             $table->text('description')->nullable();
             $table->string('imageUrl');
-            $table->string('status');
             $table->string('name');
             $table->timestamps();
         });

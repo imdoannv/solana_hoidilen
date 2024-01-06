@@ -26,7 +26,6 @@ class EventController extends Controller
         if ($response->successful()) {
             // Lấy danh sách người dùng từ response
             $events = $response->json();
-            return view('admin.events.index', ['events' => $events]);
         } else {
             // Xử lý lỗi, có thể redirect hoặc hiển thị thông báo lỗi
            return abort($response->status());
@@ -47,6 +46,7 @@ class EventController extends Controller
     {
         $model = new Event();
         $model->fill($request->all());
+
         $model->save();
 
         $response = Http::withHeaders([
