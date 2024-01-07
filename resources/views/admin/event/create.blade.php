@@ -22,7 +22,11 @@
                 </div>
                   <div class=" mt-3">
                     <label for="crud-form-1" class="form-label">Point</label>
+<<<<<<< HEAD
+                    <input  name="point_max"  id="crud-form-1" type="number" min="0" max="5" class="form-control w-full" placeholder="Input Point">
+=======
                     <input  name="point_max"  id="crud-form-1" type="text" class="form-control w-full" placeholder="Input Point">
+>>>>>>> dev
                 </div>
                 <div class="text-right mt-5">
                     <button type="button" class="btn btn-outline-secondary w-24 mr-1">Cancel</button>
