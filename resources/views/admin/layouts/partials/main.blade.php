@@ -7,7 +7,7 @@
                 <div class="col-span-12 mt-8">
                     <div class="intro-y flex items-center h-10">
                         <h2 class="text-lg font-medium truncate mr-5">
-                            General Report
+                            Dashboard
                         </h2>
                         <a href="#" class="ml-auto flex items-center text-primary"> <i data-lucide="refresh-ccw"
                                                                                        class="w-4 h-4 mr-3"></i> Reload
@@ -19,49 +19,10 @@
                                 <div class="box p-5">
                                     <div class="flex">
                                         <i data-lucide="shopping-cart" class="report-box__icon text-primary"></i>
-                                        <div class="ml-auto">
-                                            <div class="report-box__indicator bg-success tooltip cursor-pointer"
-                                                 title="33% Higher than last month"> 33% <i data-lucide="chevron-up"
-                                                                                            class="w-4 h-4 ml-0.5"></i>
-                                            </div>
-                                        </div>
+
                                     </div>
-                                    <div class="text-3xl font-medium leading-8 mt-6">4.710</div>
-                                    <div class="text-base text-slate-500 mt-1">Item Sales</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
-                            <div class="report-box zoom-in">
-                                <div class="box p-5">
-                                    <div class="flex">
-                                        <i data-lucide="credit-card" class="report-box__icon text-pending"></i>
-                                        <div class="ml-auto">
-                                            <div class="report-box__indicator bg-danger tooltip cursor-pointer"
-                                                 title="2% Lower than last month"> 2% <i data-lucide="chevron-down"
-                                                                                         class="w-4 h-4 ml-0.5"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-3xl font-medium leading-8 mt-6">3.721</div>
-                                    <div class="text-base text-slate-500 mt-1">New Orders</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">
-                            <div class="report-box zoom-in">
-                                <div class="box p-5">
-                                    <div class="flex">
-                                        <i data-lucide="monitor" class="report-box__icon text-warning"></i>
-                                        <div class="ml-auto">
-                                            <div class="report-box__indicator bg-success tooltip cursor-pointer"
-                                                 title="12% Higher than last month"> 12% <i data-lucide="chevron-up"
-                                                                                            class="w-4 h-4 ml-0.5"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-3xl font-medium leading-8 mt-6">2.149</div>
-                                    <div class="text-base text-slate-500 mt-1">Total Products</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">{{$dataCount}}</div>
+                                    <div class="text-base text-slate-500 mt-1">Event</div>
                                 </div>
                             </div>
                         </div>
@@ -70,18 +31,47 @@
                                 <div class="box p-5">
                                     <div class="flex">
                                         <i data-lucide="user" class="report-box__icon text-success"></i>
-                                        <div class="ml-auto">
-                                            <div class="report-box__indicator bg-success tooltip cursor-pointer"
-                                                 title="22% Higher than last month"> 22% <i data-lucide="chevron-up"
-                                                                                            class="w-4 h-4 ml-0.5"></i>
-                                            </div>
-                                        </div>
+
                                     </div>
-                                    <div class="text-3xl font-medium leading-8 mt-6">152.040</div>
-                                    <div class="text-base text-slate-500 mt-1">Unique Visitor</div>
+                                    <div class="text-3xl font-medium leading-8 mt-6">{{$dataCountUser}}</div>
+                                    <div class="text-base text-slate-500 mt-1">User</div>
                                 </div>
                             </div>
                         </div>
+{{--                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">--}}
+{{--                            <div class="report-box zoom-in">--}}
+{{--                                <div class="box p-5">--}}
+{{--                                    <div class="flex">--}}
+{{--                                        <i data-lucide="monitor" class="report-box__icon text-warning"></i>--}}
+{{--                                        <div class="ml-auto">--}}
+{{--                                            <div class="report-box__indicator bg-success tooltip cursor-pointer"--}}
+{{--                                                 title="12% Higher than last month"> 12% <i data-lucide="chevron-up"--}}
+{{--                                                                                            class="w-4 h-4 ml-0.5"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="text-3xl font-medium leading-8 mt-6">2.149</div>--}}
+{{--                                    <div class="text-base text-slate-500 mt-1">Total Products</div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-span-12 sm:col-span-6 xl:col-span-3 intro-y">--}}
+{{--                            <div class="report-box zoom-in">--}}
+{{--                                <div class="box p-5">--}}
+{{--                                    <div class="flex">--}}
+{{--                                        <i data-lucide="user" class="report-box__icon text-success"></i>--}}
+{{--                                        <div class="ml-auto">--}}
+{{--                                            <div class="report-box__indicator bg-success tooltip cursor-pointer"--}}
+{{--                                                 title="22% Higher than last month"> 22% <i data-lucide="chevron-up"--}}
+{{--                                                                                            class="w-4 h-4 ml-0.5"></i>--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="text-3xl font-medium leading-8 mt-6">152.040</div>--}}
+{{--                                    <div class="text-base text-slate-500 mt-1">Unique Visitor</div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
                 <!-- END: General Report -->
@@ -946,3 +936,71 @@
         </div>
     </div>
 @endsection
+
+<script>
+    if ($("#report-line-chart").length) {
+        var ctx = $("#report-line-chart")[0].getContext("2d");
+        var myChart = new chart_js_auto__WEBPACK_IMPORTED_MODULE_2__["default"](ctx, {
+            type: "line",
+            data: {
+                labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    label: "# of Votes",
+                    data: [0, 200, 250, 200, 700, 550, 650, 1050, 950, 1100, 900, 1200],
+                    borderWidth: 2,
+                    borderColor: _colors__WEBPACK_IMPORTED_MODULE_1__["default"].primary(0.8),
+                    backgroundColor: "transparent",
+                    pointBorderColor: "transparent",
+                    tension: 0.4
+                }, {
+                    label: "# of Votes",
+                    data: [0, 300, 400, 560, 320, 600, 720, 850, 690, 805, 1200, 1010],
+                    borderWidth: 2,
+                    borderDash: [2, 2],
+                    borderColor: $("html").hasClass("dark") ? _colors__WEBPACK_IMPORTED_MODULE_1__["default"].slate["400"](0.6) : _colors__WEBPACK_IMPORTED_MODULE_1__["default"].slate["400"](),
+                    backgroundColor: "transparent",
+                    pointBorderColor: "transparent",
+                    tension: 0.4
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: {
+                            font: {
+                                size: 12
+                            },
+                            color: _colors__WEBPACK_IMPORTED_MODULE_1__["default"].slate["500"](0.8)
+                        },
+                        grid: {
+                            display: false,
+                            drawBorder: false
+                        }
+                    },
+                    y: {
+                        ticks: {
+                            font: {
+                                size: 12
+                            },
+                            color: _colors__WEBPACK_IMPORTED_MODULE_1__["default"].slate["500"](0.8),
+                            callback: function callback(value, index, values) {
+                                return "$" + value;
+                            }
+                        },
+                        grid: {
+                            color: $("html").hasClass("dark") ? _colors__WEBPACK_IMPORTED_MODULE_1__["default"].slate["500"](0.3) : _colors__WEBPACK_IMPORTED_MODULE_1__["default"].slate["300"](),
+                            borderDash: [2, 2],
+                            drawBorder: false
+                        }
+                    }
+                }
+            }
+        });
+    }
+</script>

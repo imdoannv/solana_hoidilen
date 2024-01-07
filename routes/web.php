@@ -37,12 +37,13 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-Route::get('admin',function (){
-    return view('admin.layouts.partials.main');
-})->name('admin');
+Route::get('admin',[\App\Http\Controllers\DashboardController::class,'index'])->name('admin');
 Route::get('/form',function (){
     return view('admin.form');
 })->name('form');
 
 Route::resource('events', EventController::class);
 Route::resource('assets', AssetController::class);
+
+
+Route::get('/',[\App\Http\Controllers\DashboardController::class,'index'])->name('admin');
