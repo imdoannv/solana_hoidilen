@@ -21,11 +21,11 @@ use App\Http\Controllers\AssetController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('/create-teacher', [UserController::class, 'store'])->name('createUser');
+Route::post('/create-teacher', [UserController::class, 'store'])->name('createUser')->middleware('checkRole:admin');
 Route::get('/create-teacher', function () {
     return view('admin.users.create');
-});
-Route::get('/teacher', [UserController::class, 'index']);
+})->middleware('checkRole:admin');
+Route::get('/teacher', [UserController::class, 'index'])->middleware('checkRole:teacher');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -38,13 +38,13 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
-Route::get('admin',[\App\Http\Controllers\DashboardController::class,'index'])->name('admin');
+Route::get('admin',[\App\Http\Controllers\DashboardController::class,'index'])->name('admin')->middleware('checkRole:teacher,admin');
 Route::get('/form',function (){
     return view('admin.form');
 })->name('form');
 
-Route::resource('events', EventController::class);
-Route::resource('assets', AssetController::class);
+Route::resource('events', EventController::class)->middleware('checkRole:teacher,admin');
+Route::resource('assets', AssetController::class)->middleware('checkRole:teacher,admin');
 
 
-Route::get('/',[\App\Http\Controllers\DashboardController::class,'index'])->name('admin');
+// Route::get('/',[\App\Http\Controllers\DashboardController::class,'index'])->name('admin');
