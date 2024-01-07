@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Event;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Str;
-
+use Illuminate\Support\Facades\Redirect;
 class EventController extends Controller
 {
     /**
@@ -48,7 +48,10 @@ class EventController extends Controller
         $model->fill($request->all());
 
         $model->save();
-
+        if (!$model->wasRecentlyCreated) {
+            toastr()->error('There was an error creating the instructor!');
+            return Redirect::back();
+        }
         $response = Http::withHeaders([
             'accept' => 'application/json',
             'content-type' => 'application/json',
@@ -58,13 +61,14 @@ class EventController extends Controller
                 'description'=>$request->input('description'),
                 'imageUrl'=>'https://picsum.photos/200/300'
         ]);
-        dd($response->successful());
-
-//        if ($response->successful()) {
-//            return response()->json($response->json(), 201);
-//        } else {
-//            return response()->json(['error' => 'Failed to create user'], $response->status());
-//        }
+        if ($response->successful()) {
+            toastr()->success('Create Event Success.');
+            return redirect('/admin');
+        } else {
+            $model->delete();
+            toastr()->error('There was an error sending information to blockChain!');
+            return Redirect::back();
+        }
     }
 
     /**

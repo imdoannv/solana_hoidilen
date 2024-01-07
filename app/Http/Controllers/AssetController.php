@@ -6,7 +6,11 @@ use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\User;
+
 use Illuminate\Support\Facades\Validator;
+
+use Illuminate\Support\Facades\Redirect;
+
 
 class AssetController extends Controller
 {
@@ -37,8 +41,6 @@ class AssetController extends Controller
         $request->validate([
             'email' => 'required|email',
         ]);
-        // $emailExists = User::query()->where('email', $request->email)->exists();
-        // $countAsset = User::query()->where('role', 'student')->count();
         $response = Http::withHeaders([
             'accept' => 'application/json',
             'content-type' => 'application/json',
@@ -97,11 +99,17 @@ class AssetController extends Controller
                         ],
                     ],
                 ]);
-                // dd($response->successful());
-                toastr()->success('SuccessFully.');
-                return back();
+            if ($response->successful()) {
+                toastr()->success('Create Teacher Success.');
+                return redirect('/admin');
+            } else {
+                toastr()->error('There was an error sending information to blockChain!');
+                return Redirect::back();
             }
         }
+
+
+    }
     }
 
     /**
