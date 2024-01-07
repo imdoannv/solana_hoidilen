@@ -1,5 +1,5 @@
 <nav class="side-nav">
-    <a href="#" class="intro-x flex items-center pl-5 pt-4">
+    <a href="/admin" class="intro-x flex items-center pl-5 pt-4">
         <img alt="Midone - HTML Admin Template" class="w-6" src="{{asset('be/dist/images/logo.svg')}}">
         <span class="hidden xl:block text-white text-lg ml-3"> Rubick </span>
     </a>
@@ -18,21 +18,21 @@
             <a href="javascript:;" class="side-menu">
                 <div class="side-menu__icon"> <i data-lucide="users"></i> </div>
                 <div class="side-menu__title">
-                    Teacher
+                    User
                     <div class="side-menu__sub-icon "> <i data-lucide="chevron-down"></i> </div>
                 </div>
             </a>
             <ul class="">
                 <li>
-                    <a href="create-teacher" class="side-menu">
+                    <a href="/create-teacher" class="side-menu">
                         <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
-                        <div class="side-menu__title">Create Teacher </div>
+                        <div class="side-menu__title">Create User </div>
                     </a>
                 </li>
                 <li>
                     <a href="/teacher" class="side-menu">
                         <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
-                        <div class="side-menu__title">Teacher </div>
+                        <div class="side-menu__title">User </div>
                     </a>
                 </li>
             </ul>
@@ -58,7 +58,7 @@
             <a href="javascript:;" class="side-menu">
                 <div class="side-menu__icon"> <i data-lucide="box"></i> </div>
                 <div class="side-menu__title">
-                    Assets
+                        Confirm join event
                     <div class="side-menu__sub-icon "> <i data-lucide="chevron-down"></i> </div>
                 </div>
             </a>
@@ -66,7 +66,7 @@
                 <li>
                     <a href="{{route('assets.create')}}" class="side-menu">
                         <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
-                        <div class="side-menu__title">Create Asset </div>
+                        <div class="side-menu__title">Confirm </div>
                     </a>
                 </li>
 

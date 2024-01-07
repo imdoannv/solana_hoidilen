@@ -10,18 +10,13 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        $count = Event::query()->count();
         $response = Http::withHeaders([
             'Accept' => 'application/json',
             'x-api-key' => env('API_KEY'),
         ])->get('https://api.gameshift.dev/asset-collections', [
-            'page' => 1,
-            'perPage' => 999,
         ]);
-        $jsonData = $response->json();
-        $dataCount = count($jsonData['data']);
-//        dd($dataCount);
-
+        $jsonData = $response->json()['meta'];
+        $dataCount= $jsonData['totalResults'];
         $responseUser = Http::withHeaders([
             'Accept' => 'application/json',
             'x-api-key' => env('API_KEY'),
@@ -31,7 +26,6 @@ class DashboardController extends Controller
         ]);
         $jsonDataUser = $responseUser->json();
         $dataCountUser = count($jsonDataUser['data']);
-//        dd($dataCountUser);
         return view('admin.layouts.partials.main',compact('dataCount','dataCountUser'));
     }
 }
