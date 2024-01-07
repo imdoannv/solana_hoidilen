@@ -21,7 +21,7 @@
                     <input  name="description"  id="crud-form-1" type="text" class="form-control w-full" placeholder="Input Description">
                 </div>
                   <div class=" mt-3">
-                    <label for="crud-form-1" class="form-label">Point Max</label>
+                    <label for="crud-form-1" class="form-label">Point</label>
                     <input  name="point_max"  id="crud-form-1" type="text" class="form-control w-full" placeholder="Input Point">
                 </div>
                 <div class="text-right mt-5">

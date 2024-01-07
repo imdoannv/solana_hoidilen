@@ -7,11 +7,6 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
+                <img class="w-100" style='width:100%' src="{{ asset('fpt.jpeg') }}" alt="">
     </div>
 </x-app-layout>

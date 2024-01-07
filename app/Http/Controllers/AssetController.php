@@ -6,6 +6,7 @@ use App\Models\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\User;
+use Illuminate\Support\Facades\Redirect;
 
 class AssetController extends Controller
 {
@@ -52,20 +53,14 @@ class AssetController extends Controller
         foreach ($responseData as $data) {
             $name = $data['name'];
             if($name==$request->email){
-              
-                    // Tìm thấy bản ghi với giá trị 'name' là 'viet2@fpt.edu.vn'
-                    $foundRecord = $data;
-                    break;
-                
+                $foundRecord = $data;
+                break;
             }
-
         }
         if (isset($foundRecord)) {
             // Xử lý bản ghi đã tìm thấy
-          
+
             $id = $foundRecord['id'];
-            // dd($foundRecord);
-            // dd($id);
             $response = Http::withHeaders([
                 'accept' => 'application/json',
                 'content-type' => 'application/json',
@@ -78,8 +73,14 @@ class AssetController extends Controller
                         ],
                     ],
                 ]);
-            dd($response->successful());
-        } 
+            if ($response->successful()) {
+                toastr()->success('Create Teacher Success.');
+                return redirect('/admin');
+            } else {
+                toastr()->error('There was an error sending information to blockChain!');
+                return Redirect::back();
+            }
+        }
 
 
     }
