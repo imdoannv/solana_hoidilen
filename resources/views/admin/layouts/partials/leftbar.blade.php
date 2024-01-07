@@ -18,7 +18,7 @@
             <a href="javascript:;" class="side-menu">
                 <div class="side-menu__icon"> <i data-lucide="users"></i> </div>
                 <div class="side-menu__title">
-                    Users
+                    Teacher
                     <div class="side-menu__sub-icon "> <i data-lucide="chevron-down"></i> </div>
                 </div>
             </a>
@@ -27,6 +27,12 @@
                     <a href="create-teacher" class="side-menu">
                         <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
                         <div class="side-menu__title">Create Teacher </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="/teacher" class="side-menu">
+                        <div class="side-menu__icon"> <i data-lucide="activity"></i> </div>
+                        <div class="side-menu__title">Teacher </div>
                     </a>
                 </li>
             </ul>

@@ -21,6 +21,28 @@ class UserController extends Controller
     public function index()
     {
         //
+        $response = Http::withHeaders([
+            'Accept' => 'application/json',
+            'x-api-key' => env('API_KEY'),
+        ])->get(env('API_URL').'/users', [
+            // 'page' => 1,
+            // 'perPage' => 2,
+        ]);
+        $response1 = Http::withHeaders([
+            'accept' => 'application/json',
+            'content-type' => 'application/json',
+            'x-api-key' => env('API_KEY'),
+        ])->get('https://api.gameshift.dev/assets', [
+        ]);
+        // dd();
+        $res = $response1->json()['data'];
+
+        if ($response->successful()) {
+            $users = $response->json()['data'];
+            return view('admin.users.index',compact('users','res'));
+        } else {
+            abort($response->status());
+        }
     }
 
     /**

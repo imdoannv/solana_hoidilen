@@ -25,6 +25,7 @@ Route::post('/create-teacher', [UserController::class, 'store'])->name('createUs
 Route::get('/create-teacher', function () {
     return view('admin.users.create');
 });
+Route::get('/teacher', [UserController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
